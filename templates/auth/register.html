@@ -6,7 +6,15 @@
 {% block main %}
 
 <h1 class="font-bold font-mono">Hello register</h1>
-
+<form action="{{{{ url_for('register' ) }}}}" method="post">
+        <label for="username"></label>
+        <input type="text" name="username" placeholder="Your username or username" required />
+        <label for="email"></label>
+        <input type="text" name="email" placeholder="Your email or username" required />
+        <label for="password"></label>
+        <input type="text" name="password" placeholder="Your password" required />
+        <button type="submit">Register</button>
+</form>
 
 
 {% endblock main %}
